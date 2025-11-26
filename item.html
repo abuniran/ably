@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اونلاين استور</title>
+
+
+    <!-- link css -->
+    <link rel="shortcut icon" href="img/logo-w.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css/Online.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css/Responsive.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <header>
+        <div class="container top-nav">
+            <a href="#" class="logo"><img src="img/logo-e.png" alt=""></a>
+            <form action="" class="search">
+                <input type="search" placeholder="Search for products...">
+                <button type="submit">بحث عن المنتج</button>
+            </form>
+            <div class="cart_header">
+                <div onclick="open_cart()" class="icon_cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="count_item">0</span>
+                </div>
+                <div class="tottal_price">
+                    <p> سلة التسوق الخاصة بيك:</p>
+                    <p class="price_cart_Head">دينار0</p>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="links container">
+
+                <i onclick="open_menu()" class="fa-solid fa-bars btn_open_menu"></i>
+
+                <ul id="menu">
+                    <span onclick=" close_menu()" class="bg-overlay"></span>
+                    <i onclick=" close_menu()" class="fa-regular fa-circle-xmark btn_close_menu"></i>
+                    <img class="logo_menu" src="img/logo-e.png" alt="">
+                    <li class="active"><a href="index.html">الصفحة الرئيسية</a></li>
+                    <li><a href="products.html">جميع المنتجات</a></li>
+                    <li><a href="about.html">معلومات عنا</a></li>
+                    <li><a href="contact.html"> اتصال بينا</a></li>
+                </ul>
+                <div class="loging_signup">
+                    <a href="#"> تسجيل الدخول<i class="fa-solid fa-right-to-bracket"></i></a>
+                    <a href="#">اشتراك<i class="fa-solid fa-user-plus"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="cart">
+        <div class="top_cart">
+            <h3>عربة التسوّق الخاصة بيك<span class="count_item_cart">(0 عنصر في عربة التسوّق)</span></h3>
+            <span onclick="close_cart()" class="close_cart"><i class="fa-regular fa-circle-xmark"></i></span>
+        </div>
+
+
+        <div class="items_in_cart">
+
+        </div>
+        <div class="bottom_cart">
+            <div class="total">
+                <p>إجمالي المشتريات</p>
+                <p class="price_cart_total">$0</p>
+            </div>
+
+            <div class="button_Cart">
+                <a href="#" class="btn_cart">المتابعة لإتمام الشراء</a>
+                <button class="btn_cart trans_bg">تسوق أكثر</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="item_detail">
+        <div class="container">
+            <div class="img_item">
+                <div class="big_img">
+                    <img id="bigImg" src="img/product/product2.jpg" alt="">
+                </div>
+                <div class="sm_imgs">
+                    <img onclick="changeItemImage(this.src)" src="img/product/product-1.jpg" alt="">
+                    <img onclick="changeItemImage(this.src)" src="img/product/product1.jpg" alt="">
+                    <img onclick="changeItemImage(this.src)" src="img/product/product-2.jpg" alt="">
+                    <img onclick="changeItemImage(this.src)" src="img/product/product2.jpg" alt="">
+                </div>
+            </div>
+            <div class="details_item">
+                <h1 class="name">هاتف ذكي أصلي أندرويد، بشريحتي اتصال - موديل G3</h1>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price">
+                    <p><span>120.00 دينار</span></p>
+                    <p class="old_price">80.00دينار</p>
+                </div>
+                <h5>توفّر المنتج: <span>متوفر في المخزون</span></h5>
+                <h5>SKU: <span>شاشة سامسونج فائقة العرض C49J89 بسعر 875 دينار</span></h5>
+                <p class="text_p">اكتشف الآن أحدث منتجاتنا بأفضل الأسعار! جودة عالية، عروض حصرية، وخدمة عملاء مميزة لنلبي جميع احتياجاتك. لا تفوت
+                    الفرصة وكن من الأوائل الذين يحصلون على أفضل الصفقات.</p>
+                    <h4>سارع بالشراء! تبقى فقط 98 منتجًا في المخزون.</h4>
+                    
+                    <button>أضف إلى السلة <i class="fa-solid fa-cart-arrow-down"></i></button>
+                    <div class="icons">
+                        <span><i class="fa-regular fa-heart"></i></span>
+                        <span><i class="fa-solid fa-sliders"></i></span>
+                        <span><i class="fa-solid fa-print"></i></span>
+                        <span><i class="fa-solid fa-share-nodes"></i></span>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="slide slide_sale">
+        <div class="container">
+
+            <div class="sale_sec mySwiper">
+
+                <div class="top_slide">
+                    <h2><span>منتجات</span> معروضة للبيع</h2>
+                </div>
+
+                <div id="swiper_items_sale" class="products swiper-wrapper">
+
+
+
+
+
+
+
+                </div>
+
+
+                <div class="swiper-button-next btn_swip"></div>
+                <div class="swiper-button-prev btn_swip"></div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <div class="back_to_top">
+        <p>العودة إلى الأعلى</p>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="big_row">
+                <img src="img/logo-w.png" alt="">
+                <div class="hotline">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="text">
+                        <h5>نحن في خدمتك دائما علي مدار الساعة 24/24:</h5>
+                        <h6>(+218) 123 456 7890</h6>
+
+                    </div>
+                </div>
+
+                <p>وجهتك المفضلة للتسوق الالكتروني. نوفر لك أفضل المنتجات بأفضل الأسعار مع خدمة توصيل سريعة ودعم متواصل
+                    علي مدار الساعة - مرحبا بيك في اونلاين استور</p>
+            </div>
+            <div class="row">
+                <h4>الأسئلة الشائعة وخدمة العملاء</h4>
+
+
+                <div class="links">
+                    <a href="#">الأسئلة الشائعة</a>
+                    <a href="#">متابعة الطلب</a>
+                    <a href="#">اتصل بنا</a>
+                    <a href="#">الأحداث</a>
+                    <a href="#">مركز المساعدة</a>
+                </div>
+            </div>
+
+
+
+
+            <div class="row">
+                <h4>الشحن والتسليم</h4>
+
+
+                <div class="links">
+                    <a href="#">معلومات التسليم</a>
+                    <a href="#">الخصومات</a>
+                    <a href="#">الدفع والشحن</a>
+                    <a href="#">تقديري</a>
+                    <a href="#">دليل الشحن</a>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <h4>معلومات</h4>
+
+
+                <div class="links">
+                    <a href="#">شائع</a>
+                    <a href="#">خدمتنا</a>
+                    <a href="#">حسابك</a>
+                    <a href="#">سياسة الخصوصية</a>
+                    <a href="#">الشروط والأحكام</a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="bottom_footer">
+            <div class="container">
+                <p>حقوق الطبع والنشر &copy; <span>اونلاين استور. </span>جميع الحقوق محفوظة</p>
+                <div class="payment_img">
+                    <img src="img/payment-1.png" alt="">
+                    <img src="img/payment-2.png" alt="">
+                    <img src="img/payment-3.png" alt="">
+                    <img src="img/payment-4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/items_home.js"></script>
+
+</body>
+
+</html>

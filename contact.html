@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - اونلاين استور</title>
+
+
+    <!-- link css -->
+    <link rel="shortcut icon" href="img/logo-w.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css/Online.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css/Responsive.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <header>
+        <div class="container top-nav">
+            <a href="index.html" class="logo"><img src="img/logo-e.png" alt=""></a>
+            <form action="" class="search">
+                <input type="search" placeholder="Search for products...">
+                <button type="submit">بحث عن المنتج</button>
+            </form>
+            <div class="cart_header">
+                <div onclick="open_cart()" class="icon_cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="count_item">0</span>
+                </div>
+                <div class="tottal_price">
+                    <p> سلة التسوق الخاصة بيك:</p>
+                    <p class="price_cart_Head">دينار0</p>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="links container">
+
+                <i onclick="open_menu()" class="fa-solid fa-bars btn_open_menu"></i>
+
+                <ul id="menu">
+                    <span onclick=" close_menu()" class="bg-overlay"></span>
+                    <i onclick=" close_menu()" class="fa-regular fa-circle-xmark btn_close_menu"></i>
+                    <img class="logo_menu" src="img/logo-e.png" alt="">
+                    <li class="active"><a href="index.html">الصفحة الرئيسية</a></li>
+                    <li><a href="all_produts.html">جميع المنتجات</a></li>
+                    <li><a href="about.html">معلومات عنا</a></li>
+                    <li><a href="contact.html"> اتصال بينا</a></li>
+                </ul>
+                <div class="loging_signup">
+                    <a href="login.html"> تسجيل الدخول<i class="fa-solid fa-right-to-bracket"></i></a>
+                    <a href="signup_page.html">اشتراك<i class="fa-solid fa-user-plus"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="contact-section container">
+        <h2>اتصل بينا</h2>
+        <p>إذا كان لديك أي استفسار أو مشكلة، لا تتردد في التواصل معنا عبر النموذج التالي:</p>
+        <form action="#" method="post" class="contact-form">
+            <label>الاسم الكامل:</label>
+            <input type="text" name="name" placeholder="ادخل اسمك" required>
+
+            <label>البريد الالكتروني:</label>
+            <input type="email" name="email" placeholder="ادخل البريد الالكتروني" required>
+
+            <label>رقم الهاتف:</label>
+            <input type="number" name="phone" placeholder="ادخل رقم الهاتف" required>
+            <label>الرسالة:</label>
+            <input type="message" rows="5" placeholder="اكتب رسالتك هنا" required>
+
+            <button type="submit">ارسال</button>
+        </form>
+        <div class="contact-info">
+            <h3>معلومات التواصل</h3>
+            <p><i class="fa-solid fa-location-dot"></i> طرابلس، ليبيا</p>
+            <p><i class="fa-solid fa-phone"></i>218656787777</p>
+            <p><i class="fa-solid fa-envelope"></i> info@onlinestore.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="big_row">
+                <img src="img/logo-w.png" alt="">
+                <div class="hotline">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="text">
+                        <h5>نحن في خدمتك دائما علي مدار الساعة 24/24:</h5>
+                        <h6>218656787777</h6>
+                    </div>
+                </div>
+                <p>وجهتك المفضلة للتسوق الالكتروني. نوفر لك أفضل المنتجات بأفضل الأسعار مع خدمة توصيل سريعة ودعم متواصل
+                    علي مدار الساعة - مرحبا بيك في اونلاين استور</p>
+            </div>
+            <div class="row">
+                <h4>الأسئلة الشائعة وخدمة العملاء</h4>
+
+
+                <div class="links">
+                    <a href="#">الأسئلة الشائعة</a>
+                    <a href="#">متابعة الطلب</a>
+                    <a href="#">اتصل بنا</a>
+                    <a href="#">الأحداث</a>
+                    <a href="#">مركز المساعدة</a>
+                </div>
+            </div>
+
+
+
+
+            <div class="row">
+                <h4>الشحن والتسليم</h4>
+
+
+                <div class="links">
+                    <a href="#">معلومات التسليم</a>
+                    <a href="#">الخصومات</a>
+                    <a href="#">الدفع والشحن</a>
+                    <a href="#">تقديري</a>
+                    <a href="#">دليل الشحن</a>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <h4>معلومات</h4>
+
+
+                <div class="links">
+                    <a href="#">شائع</a>
+                    <a href="#">خدمتنا</a>
+                    <a href="#">حسابك</a>
+                    <a href="#">سياسة الخصوصية</a>
+                    <a href="#">الشروط والأحكام</a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="bottom_footer">
+            <div class="container">
+                <p>حقوق الطبع والنشر &copy; <span>اونلاين استور. </span>جميع الحقوق محفوظة</p>
+                <div class="payment_img">
+                    <img src="img/payment-1.png" alt="">
+                    <img src="img/payment-2.png" alt="">
+                    <img src="img/payment-3.png" alt="">
+                    <img src="img/payment-4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/items_home.js"></script>
+</body>
+
+</html>
